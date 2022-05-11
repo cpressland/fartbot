@@ -5,4 +5,4 @@ ADD main.py .
 
 RUN pip install redis
 
-CMD [ "python", "main.py" ]
+CMD [ "python", "inserter.py" ]

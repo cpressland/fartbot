@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 redis = "*"
+falcon = "*"
 
 [dev-packages]
 black = "*"
