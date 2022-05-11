@@ -15,7 +15,8 @@ class FartReturner:
         resp.text = f"""
         <html>
             <body>
-            <title>Number of Items in Redis (probably)</title>
+            <h1>Number of Items in Redis (probably)</h1>
+                <p>^^ Nathan said this will fix it</p>
                 <p>{r.dbsize()}</p>
             </body>
         </html>
