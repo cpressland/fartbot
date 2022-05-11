@@ -24,7 +24,7 @@ class FartReturner:
 
 if __name__ == "__main__":
     app = falcon.App()
-    app.add_route("/hypercounter", FartReturner())
+    app.add_route("/", FartReturner())
     with make_server("", 6502, app) as httpd:
         print("Serving on port 6502")
         httpd.serve_forever()
