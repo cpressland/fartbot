@@ -1,9 +1,11 @@
-import os
-import redis
 from random import randint
 from time import sleep
 
-r = redis.from_url(os.getenv("REDIS_URL", "redis://127.0.0.1:6379"))
+import redis
+
+from settings import REDIS_URL
+
+r = redis.from_url(REDIS_URL)
 
 
 def main():
